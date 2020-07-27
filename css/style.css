@@ -85,6 +85,18 @@ p {
   clear: both;
 }
 
+/* Padding */
+/* Padding for the top and bottom (y axis) */
+.py-1{ padding: 10px 0; }
+.py-2{ padding: 20px 0; }
+.py-3{ padding: 30px 0; }
+
+
+/* heading sizes */
+.l-heading {
+  font-size: 40px;
+}
+
 
 /* Nav Bar */
 
@@ -190,6 +202,60 @@ p {
   margin-bottom: 10px;
 }
 
+/* About Info */
+
+#about-info .info-right {
+  float:right;
+  width:50%;
+  /* take up 100% of the floated section height */
+  min-height:100%;
+}
+
+/* Images you want to fill the container 100% usually its container is info-right */
+/* use display:block so that you can use margin: auto important for float to center in the right 50% as stated in the above css */
+#about-info .info-right img {
+  display:block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testimonials */
+
+#testimonials {
+  height:600px;
+  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+/* margin used to actually seperate sections; padding used to make the inner area larger */
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  /* opacity effects everything within the element */
+  opacity: 0.9;
+}
+
+#testimonials .testimonial img{
+  width:100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
 /* Footer */
 
 #main-footer  {
@@ -197,4 +263,5 @@ p {
   background: #444;
   color: #fff;
   padding: 20px;
+  bottom: 0px;
 }
